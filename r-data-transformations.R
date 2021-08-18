@@ -35,12 +35,10 @@ passwords <-
 
 write_csv(passwords, "passwords.csv")
 
+# loans data
 
-
-
-loans_full_schema
-
-loans <- loans_full_schema %>%
+loans <- 
+  loans_full_schema %>%
   mutate(application_type = as.character(application_type)) %>%
   filter(application_type != "") %>%
   mutate(
@@ -48,6 +46,10 @@ loans <- loans_full_schema %>%
     homeownership    = fct_relevel(homeownership, "rent", "mortgage", "own"), 
     application_type = fct_relevel(application_type, "joint", "individual")
   ) 
+
+write_csv(loans, "loans.csv")
+
+
 loans_individual_rent <- loans %>%
   filter(
     application_type == "individual",
