@@ -65,7 +65,7 @@ county <-
       pop_change == 0 ~ "no change",
       pop_change > 0 ~ "gain"
     ),
-    pop_change_2levels = if_else(pop_change_3levels == "gain", "gain", "no gain")
+    population_change = if_else(pop_change_3levels == "gain", "gain", "no gain")
   ) %>% 
   filter(!is.na(pop_change))
 
