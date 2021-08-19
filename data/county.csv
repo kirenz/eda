@@ -75,7 +75,6 @@ Denali Borough,Alaska,1893,1826,2074,7.35,15.5,60.7,14.1,9.38,no,some_college,39
 Dillingham Census Area,Alaska,4922,4847,4932,-0.98,16.6,60.7,14.1,9.29,no,hs_diploma,21804.82,58708,none,loss,no gain
 Fairbanks North Star Borough,Alaska,82840,97581,99703,-1.18,7.7,59.8,26.2,6.29,yes,some_college,34968.82,76250,none,loss,no gain
 Haines Borough,Alaska,2392,2508,2526,-1.29,8.4,74.5,13.2,9.09,no,some_college,37141.41,70640,none,loss,no gain
-Hoonah Angoon Census Area,Alaska,3436,2150,NA,NA,11.1,64,8.6,12.63,no,some_college,29040.32,57900,NA,NA,NA
 Juneau City and Borough,Alaska,30711,31275,32094,-1.46,7.4,64,32.2,4.75,no,some_college,41254.44,90749,none,loss,no gain
 Kenai Peninsula Borough,Alaska,49691,55400,58617,2.85,11,72.7,12,8.49,no,some_college,32050.39,65279,none,gain,gain
 Ketchikan Gateway Borough,Alaska,14070,13477,13856,1.27,10.6,59.1,36.7,6.31,no,some_college,32635.69,67321,none,gain,gain
@@ -88,11 +87,9 @@ Northwest Arctic Borough,Alaska,7208,7523,7684,-0.48,25.3,53.7,19.4,16.82,no,hs_
 Petersburg Borough,Alaska,6684,3815,3281,-0.18,7.8,76.7,9.5,9.34,no,some_college,33142.29,63490,NA,loss,no gain
 Prince of Wales-Hyder Census Area,Alaska,6146,5559,6443,-0.05,16,69,9.7,11.42,no,some_college,23990.18,52114,NA,loss,no gain
 Sitka City and Borough,Alaska,8835,8881,8689,-3.05,9.2,55.9,24.4,4.68,no,some_college,35002.92,70765,none,loss,no gain
-Skagway,Alaska,NA,968,NA,NA,5.6,59.1,27.2,10.56,no,some_college,38150.23,70673,NA,NA,NA
 Southeast Fairbanks Census Area,Alaska,6174,7029,6888,-1.32,13.9,65.2,17.3,10.44,no,some_college,24596.05,63866,none,loss,no gain
 Valdez-Cordova Census Area,Alaska,10195,9636,9278,-5.06,7.4,71.8,17.6,7.96,no,some_college,30746.27,86019,none,loss,no gain
 Kusilvak Census Area,Alaska,7028,7459,8202,2.91,NA,64.8,4.1,NA,NA,NA,NA,NA,none,gain,gain
-Wrangell,Alaska,NA,2369,NA,NA,11.7,78.7,11.9,7.71,no,some_college,30153.57,56094,NA,NA,NA
 Yakutat City and Borough,Alaska,808,662,605,-7.07,6.2,61.1,12.4,9.36,no,some_college,29311.67,64583,NA,loss,no gain
 Yukon-Koyukuk Census Area,Alaska,6551,5588,5365,-3.52,25.5,69.1,2.9,18.26,no,hs_diploma,19447.74,37819,none,loss,no gain
 Apache County,Arizona,69423,71518,71606,-0.95,35.9,76.3,5.2,10.42,no,hs_diploma,12119.78,32360,NA,loss,no gain
