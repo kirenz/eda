@@ -36,7 +36,6 @@ passwords <-
 write_csv(passwords, "passwords.csv")
 
 # loans data
-
 loans <- 
   loans_full_schema %>%
   mutate(application_type = as.character(application_type)) %>%
@@ -55,3 +54,18 @@ loans_individual_rent <- loans %>%
     application_type == "individual",
     homeownership    == "rent") %>%
   nrow()
+
+# county data
+
+county <- 
+  county %>% 
+  mutate(
+    pop_change_3levels = case_when(
+      pop_change < 0 ~ "loss",
+      pop_change == 0 ~ "no change",
+      pop_change > 0 ~ "gain"
+    ),
+    pop_change_2levels = if_else(pop_change_3levels == "gain", "gain", "no gain")
+  )
+
+write_csv(county, "county.csv")
