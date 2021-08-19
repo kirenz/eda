@@ -1,4 +1,4 @@
-name,state,pop2000,pop2010,pop2017,pop_change,poverty,homeownership,multi_unit,unemployment_rate,metro,median_edu,per_capita_income,median_hh_income,smoking_ban,pop_change_3levels,pop_change_2levels
+name,state,pop2000,pop2010,pop2017,pop_change,poverty,homeownership,multi_unit,unemployment_rate,metro,median_edu,per_capita_income,median_hh_income,smoking_ban,pop_change_3levels,population_change
 Autauga County,Alabama,43671,54571,55504,1.48,13.7,77.5,7.2,3.86,yes,some_college,27841.7,55317,none,gain,gain
 Baldwin County,Alabama,140415,182265,212628,9.19,11.8,76.7,22.6,3.99,yes,some_college,27779.85,52562,none,gain,gain
 Barbour County,Alabama,29038,27457,25270,-6.22,27.2,68,11.1,5.9,no,hs_diploma,17891.73,33368,partial,loss,no gain
