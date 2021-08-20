@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+@page {
+    size: A4 landscape;
+    margin: 0;
+  }
 
 .rise-enabled {
     background-color: #ffffff !important;
