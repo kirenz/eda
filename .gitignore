@@ -1,3 +1,7 @@
 
 .vscode/settings.json
 .DS_Store
+node_modules/yauzl/README.md
+node_modules/yauzl/LICENSE
+node_modules/
+reveal.js/
