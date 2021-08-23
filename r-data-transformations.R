@@ -5,6 +5,7 @@ setwd("~/Downloads")
 library(tidyverse)
 library(openintro)
 library(tidytuesdayR)
+library(maps)
 
 
 # Stent data
@@ -70,3 +71,31 @@ county <-
   filter(!is.na(pop_change))
 
 write_csv(county, "county.csv")
+
+# Mapping data
+
+dfips <- 
+  maps::county.fips %>%
+  as_tibble() %>% 
+  extract(polyname, c("region", "subregion"), "^([^,]+),([^,]+)$")
+
+map_county <- 
+  map_data("county") %>%
+  as_tibble() %>%
+  left_join(dfips) %>%
+  mutate(fips = case_when(
+    subregion == "okaloosa"  & region == "florida"        ~ 12091L,
+    subregion == "st martin" & region == "louisiana"      ~ 22099L,
+    subregion == "currituck" & region == "north carolina" ~ 37053L,
+    # Oglala Lakota Count, see https://en.wikipedia.org/wiki/Oglala_Lakota_County,_South_Dakota
+    subregion == "shannon"   & region == "south dakota"   ~ 46113L, 
+    subregion == "galveston" & region == "texas"          ~ 48167L,
+    subregion == "accomack"  & region == "virginia"       ~ 51001L,
+    subregion == "pierce"    & region == "washington"     ~ 53053L,
+    subregion == "san juan"  & region == "washington"     ~ 53055L,
+    TRUE ~ fips
+  ))
+
+county_for_map <- 
+  county_complete %>%
+  select(fips, name, state, poverty_2017, unemployment_rate_2017, homeownership_2010, median_household_income_2017)
