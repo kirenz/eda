@@ -100,4 +100,7 @@ county_for_map <-
   county_complete %>%
   select(fips, name, state, poverty_2017, unemployment_rate_2017, homeownership_2010, median_household_income_2017)
 
-write_csv(county_for_map, "county_for_map.csv")
+map_county <- map_county %>%
+  left_join(county_for_map, by = "fips")
+
+write_csv(map_county, "county_map.csv")
