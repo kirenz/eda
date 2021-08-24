@@ -103,4 +103,10 @@ county_for_map <-
 map_county <- map_county %>%
   left_join(county_for_map, by = "fips")
 
+map_county <- 
+  map_county %>%
+  select(-lat, -long) %>% 
+  distinct(fips, .keep_all = TRUE)
+  
+
 write_csv(map_county, "county_map.csv")
