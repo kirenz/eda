@@ -110,3 +110,11 @@ map_county <-
   
 
 write_csv(map_county, "county_map.csv")
+
+## Applications model
+
+# duke_forest
+
+duke_forest <- duke_forest
+
+write_csv(duke_forest, "duke-forest.csv")
