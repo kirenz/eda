@@ -1,4 +1,5 @@
-// Cration of single PDF documents using Puppeteer
+// Creation of single PDF documents using Puppeteer (define name my_slide)
+// Execute script with    node create-one-pdf.js
 
 "use strict";
 

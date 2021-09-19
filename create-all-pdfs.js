@@ -1,4 +1,5 @@
-// Cration of multiple PDF documents using Puppeteer
+// Creation of multiple PDF documents using Puppeteer
+// Execute script with    node create-all-pdfs.js
 
 "use strict";
 
