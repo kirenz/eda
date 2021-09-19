@@ -14106,7 +14106,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Import-data">Import data<a class="anchor-link" href="#Import-data">&#182;</a></h2>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
@@ -14118,200 +14118,11 @@ div.jp-OutputPrompt {
 <span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;loans.csv&quot;</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ROOT</span> <span class="o">+</span> <span class="n">DATA</span><span class="p">)</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>emp_title</th>
-      <th>emp_length</th>
-      <th>state</th>
-      <th>homeownership</th>
-      <th>annual_income</th>
-      <th>verified_income</th>
-      <th>debt_to_income</th>
-      <th>annual_income_joint</th>
-      <th>verification_income_joint</th>
-      <th>debt_to_income_joint</th>
-      <th>...</th>
-      <th>sub_grade</th>
-      <th>issue_month</th>
-      <th>loan_status</th>
-      <th>initial_listing_status</th>
-      <th>disbursement_method</th>
-      <th>balance</th>
-      <th>paid_total</th>
-      <th>paid_principal</th>
-      <th>paid_interest</th>
-      <th>paid_late_fees</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>global config engineer</td>
-      <td>3.0</td>
-      <td>NJ</td>
-      <td>mortgage</td>
-      <td>90000.0</td>
-      <td>Verified</td>
-      <td>18.01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>C3</td>
-      <td>Mar-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>27015.86</td>
-      <td>1999.33</td>
-      <td>984.14</td>
-      <td>1015.19</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>warehouse office clerk</td>
-      <td>10.0</td>
-      <td>HI</td>
-      <td>rent</td>
-      <td>40000.0</td>
-      <td>Not Verified</td>
-      <td>5.04</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>C1</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>4651.37</td>
-      <td>499.12</td>
-      <td>348.63</td>
-      <td>150.49</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>assembly</td>
-      <td>3.0</td>
-      <td>WI</td>
-      <td>rent</td>
-      <td>40000.0</td>
-      <td>Source Verified</td>
-      <td>21.15</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>D1</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>fractional</td>
-      <td>Cash</td>
-      <td>1824.63</td>
-      <td>281.80</td>
-      <td>175.37</td>
-      <td>106.43</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>customer service</td>
-      <td>1.0</td>
-      <td>PA</td>
-      <td>rent</td>
-      <td>30000.0</td>
-      <td>Not Verified</td>
-      <td>10.16</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>A3</td>
-      <td>Jan-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>18853.26</td>
-      <td>3312.89</td>
-      <td>2746.74</td>
-      <td>566.15</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>security supervisor</td>
-      <td>10.0</td>
-      <td>CA</td>
-      <td>rent</td>
-      <td>35000.0</td>
-      <td>Verified</td>
-      <td>57.96</td>
-      <td>57000.0</td>
-      <td>Verified</td>
-      <td>37.66</td>
-      <td>...</td>
-      <td>C3</td>
-      <td>Mar-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>21430.15</td>
-      <td>2324.65</td>
-      <td>1569.85</td>
-      <td>754.80</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 55 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><aside class="notes">
@@ -14360,7 +14171,7 @@ div.jp-OutputPrompt {
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A contingency table with row proportions for the application type and homeownership variables.</span>
@@ -14380,7 +14191,7 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -14454,7 +14265,7 @@ div.jp-OutputPrompt {
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A contingency table with row proportions for the application type and homeownership variables.</span>
@@ -14474,7 +14285,7 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
 
 

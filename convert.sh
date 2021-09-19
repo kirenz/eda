@@ -1,5 +1,12 @@
 # Create all HTML slides in this folder
-jupyter nbconvert 0*.ipynb --to slides --reveal-prefix reveal.js
+jupyter nbconvert *.ipynb --to slides --reveal-prefix reveal.js
+
+
+
+# OPTIONAL 
+
+# jupyter nbconvert 10a-application-model-exploration.ipynb --to slides --reveal-prefix reveal.js
+
 
 # Convert all HTML-files to PDF with headless Chrome
 # Issue: produces only horizontal pages

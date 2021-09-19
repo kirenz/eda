@@ -14106,7 +14106,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Import-data">Import data<a class="anchor-link" href="#Import-data">&#182;</a></h2>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
@@ -14118,8 +14118,21 @@ div.jp-OutputPrompt {
 <span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;loans.csv&quot;</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ROOT</span> <span class="o">+</span> <span class="n">DATA</span><span class="p">)</span>
+</pre></div>
 
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+     </div>
+</div>
+</div>
+</div>
+
+</div></div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show head of dataframe for our two variables</span>
+<span class="n">df</span><span class="p">[[</span><span class="s2">&quot;homeownership&quot;</span><span class="p">,</span> <span class="s2">&quot;application_type&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14135,7 +14148,7 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
 
@@ -14158,153 +14171,38 @@ div.jp-OutputPrompt {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>emp_title</th>
-      <th>emp_length</th>
-      <th>state</th>
       <th>homeownership</th>
-      <th>annual_income</th>
-      <th>verified_income</th>
-      <th>debt_to_income</th>
-      <th>annual_income_joint</th>
-      <th>verification_income_joint</th>
-      <th>debt_to_income_joint</th>
-      <th>...</th>
-      <th>sub_grade</th>
-      <th>issue_month</th>
-      <th>loan_status</th>
-      <th>initial_listing_status</th>
-      <th>disbursement_method</th>
-      <th>balance</th>
-      <th>paid_total</th>
-      <th>paid_principal</th>
-      <th>paid_interest</th>
-      <th>paid_late_fees</th>
+      <th>application_type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>global config engineer</td>
-      <td>3.0</td>
-      <td>NJ</td>
       <td>mortgage</td>
-      <td>90000.0</td>
-      <td>Verified</td>
-      <td>18.01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>C3</td>
-      <td>Mar-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>27015.86</td>
-      <td>1999.33</td>
-      <td>984.14</td>
-      <td>1015.19</td>
-      <td>0.0</td>
+      <td>individual</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>warehouse office clerk</td>
-      <td>10.0</td>
-      <td>HI</td>
       <td>rent</td>
-      <td>40000.0</td>
-      <td>Not Verified</td>
-      <td>5.04</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>C1</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>4651.37</td>
-      <td>499.12</td>
-      <td>348.63</td>
-      <td>150.49</td>
-      <td>0.0</td>
+      <td>individual</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>assembly</td>
-      <td>3.0</td>
-      <td>WI</td>
       <td>rent</td>
-      <td>40000.0</td>
-      <td>Source Verified</td>
-      <td>21.15</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>D1</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>fractional</td>
-      <td>Cash</td>
-      <td>1824.63</td>
-      <td>281.80</td>
-      <td>175.37</td>
-      <td>106.43</td>
-      <td>0.0</td>
+      <td>individual</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>customer service</td>
-      <td>1.0</td>
-      <td>PA</td>
       <td>rent</td>
-      <td>30000.0</td>
-      <td>Not Verified</td>
-      <td>10.16</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>A3</td>
-      <td>Jan-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>18853.26</td>
-      <td>3312.89</td>
-      <td>2746.74</td>
-      <td>566.15</td>
-      <td>0.0</td>
+      <td>individual</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>security supervisor</td>
-      <td>10.0</td>
-      <td>CA</td>
       <td>rent</td>
-      <td>35000.0</td>
-      <td>Verified</td>
-      <td>57.96</td>
-      <td>57000.0</td>
-      <td>Verified</td>
-      <td>37.66</td>
-      <td>...</td>
-      <td>C3</td>
-      <td>Mar-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>21430.15</td>
-      <td>2324.65</td>
-      <td>1569.85</td>
-      <td>754.80</td>
-      <td>0.0</td>
+      <td>joint</td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 55 columns</p>
 </div>
 </div>
 
@@ -14314,13 +14212,101 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show tail of dataframe for our two variables</span>
+<span class="n">df</span><span class="p">[[</span><span class="s2">&quot;homeownership&quot;</span><span class="p">,</span> <span class="s2">&quot;application_type&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>homeownership</th>
+      <th>application_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>9995</th>
+      <td>rent</td>
+      <td>individual</td>
+    </tr>
+    <tr>
+      <th>9996</th>
+      <td>mortgage</td>
+      <td>individual</td>
+    </tr>
+    <tr>
+      <th>9997</th>
+      <td>mortgage</td>
+      <td>joint</td>
+    </tr>
+    <tr>
+      <th>9998</th>
+      <td>mortgage</td>
+      <td>individual</td>
+    </tr>
+    <tr>
+      <th>9999</th>
+      <td>rent</td>
+      <td>individual</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show info about variables</span>
+<span class="n">df</span><span class="p">[[</span><span class="s2">&quot;homeownership&quot;</span><span class="p">,</span> <span class="s2">&quot;application_type&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14342,66 +14328,13 @@ div.jp-OutputPrompt {
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 RangeIndex: 10000 entries, 0 to 9999
-Data columns (total 55 columns):
- #   Column                            Non-Null Count  Dtype  
----  ------                            --------------  -----  
- 0   emp_title                         9167 non-null   object 
- 1   emp_length                        9183 non-null   float64
- 2   state                             10000 non-null  object 
- 3   homeownership                     10000 non-null  object 
- 4   annual_income                     10000 non-null  float64
- 5   verified_income                   10000 non-null  object 
- 6   debt_to_income                    9976 non-null   float64
- 7   annual_income_joint               1495 non-null   float64
- 8   verification_income_joint         1455 non-null   object 
- 9   debt_to_income_joint              1495 non-null   float64
- 10  delinq_2y                         10000 non-null  int64  
- 11  months_since_last_delinq          4342 non-null   float64
- 12  earliest_credit_line              10000 non-null  int64  
- 13  inquiries_last_12m                10000 non-null  int64  
- 14  total_credit_lines                10000 non-null  int64  
- 15  open_credit_lines                 10000 non-null  int64  
- 16  total_credit_limit                10000 non-null  int64  
- 17  total_credit_utilized             10000 non-null  int64  
- 18  num_collections_last_12m          10000 non-null  int64  
- 19  num_historical_failed_to_pay      10000 non-null  int64  
- 20  months_since_90d_late             2285 non-null   float64
- 21  current_accounts_delinq           10000 non-null  int64  
- 22  total_collection_amount_ever      10000 non-null  int64  
- 23  current_installment_accounts      10000 non-null  int64  
- 24  accounts_opened_24m               10000 non-null  int64  
- 25  months_since_last_credit_inquiry  8729 non-null   float64
- 26  num_satisfactory_accounts         10000 non-null  int64  
- 27  num_accounts_120d_past_due        9682 non-null   float64
- 28  num_accounts_30d_past_due         10000 non-null  int64  
- 29  num_active_debit_accounts         10000 non-null  int64  
- 30  total_debit_limit                 10000 non-null  int64  
- 31  num_total_cc_accounts             10000 non-null  int64  
- 32  num_open_cc_accounts              10000 non-null  int64  
- 33  num_cc_carrying_balance           10000 non-null  int64  
- 34  num_mort_accounts                 10000 non-null  int64  
- 35  account_never_delinq_percent      10000 non-null  float64
- 36  tax_liens                         10000 non-null  int64  
- 37  public_record_bankrupt            10000 non-null  int64  
- 38  loan_purpose                      10000 non-null  object 
- 39  application_type                  10000 non-null  object 
- 40  loan_amount                       10000 non-null  int64  
- 41  term                              10000 non-null  int64  
- 42  interest_rate                     10000 non-null  float64
- 43  installment                       10000 non-null  float64
- 44  grade                             10000 non-null  object 
- 45  sub_grade                         10000 non-null  object 
- 46  issue_month                       10000 non-null  object 
- 47  loan_status                       10000 non-null  object 
- 48  initial_listing_status            10000 non-null  object 
- 49  disbursement_method               10000 non-null  object 
- 50  balance                           10000 non-null  float64
- 51  paid_total                        10000 non-null  float64
- 52  paid_principal                    10000 non-null  float64
- 53  paid_interest                     10000 non-null  float64
- 54  paid_late_fees                    10000 non-null  float64
-dtypes: float64(17), int64(25), object(13)
-memory usage: 4.2+ MB
+Data columns (total 2 columns):
+ #   Column            Non-Null Count  Dtype 
+---  ------            --------------  ----- 
+ 0   homeownership     10000 non-null  object
+ 1   application_type  10000 non-null  object
+dtypes: object(2)
+memory usage: 156.4+ KB
 </pre>
 </div>
 </div>
@@ -14410,19 +14343,135 @@ memory usage: 4.2+ MB
 
 </div>
 
-</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">homeownership</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Change data format from object to category</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">application_type</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">application_type</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+
+<span class="c1"># Show info</span>
+<span class="n">df</span><span class="p">[[</span><span class="s2">&quot;homeownership&quot;</span><span class="p">,</span> <span class="s2">&quot;application_type&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 10000 entries, 0 to 9999
+Data columns (total 2 columns):
+ #   Column            Non-Null Count  Dtype   
+---  ------            --------------  -----   
+ 0   homeownership     10000 non-null  category
+ 1   application_type  10000 non-null  category
+dtypes: category(2)
+memory usage: 19.9 KB
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show levels of categorical variables</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;homeownership:&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">categories</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;application_type:&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">categories</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>homeownership: Index([&#39;mortgage&#39;, &#39;own&#39;, &#39;rent&#39;], dtype=&#39;object&#39;) 
+
+application_type: Index([&#39;individual&#39;, &#39;joint&#39;], dtype=&#39;object&#39;)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Summarizing the frequencies for each value</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;homeownership&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(),</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;application_type&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>mortgage    4789
+rent        3858
+own         1353
+Name: homeownership, dtype: int64 
+
+individual    8505
+joint         1495
+Name: application_type, dtype: int64
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div></section></section><section><section>
@@ -14433,7 +14482,88 @@ memory usage: 4.2+ MB
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># contingency table for application type and homeownership.</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">application_type</span>	<span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="p">,</span>  <span class="n">margins</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>homeownership</th>
+      <th>mortgage</th>
+      <th>own</th>
+      <th>rent</th>
+    </tr>
+    <tr>
+      <th>application_type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>individual</th>
+      <td>3839</td>
+      <td>1170</td>
+      <td>3496</td>
+    </tr>
+    <tr>
+      <th>joint</th>
+      <td>950</td>
+      <td>183</td>
+      <td>362</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># contingency table for application type and homeownership.</span>
@@ -14453,7 +14583,7 @@ memory usage: 4.2+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -14522,47 +14652,6 @@ memory usage: 4.2+ MB
 
 </div>
 
-</div></div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A table summarizing the frequencies for each value of the homeownership variable: mortgage, rent, and own.</span>
-<span class="n">df</span><span class="p">[</span><span class="s2">&quot;homeownership&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>mortgage    4789
-rent        3858
-own         1353
-Name: homeownership, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14571,11 +14660,10 @@ Name: homeownership, dtype: int64</pre>
 </div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="o">%</span><span class="k">config</span> InlineBackend.figure_formats = [&#39;svg&#39;]
 
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -14604,7 +14692,7 @@ Name: homeownership, dtype: int64</pre>
 </div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Counts of values of the homeownership variable.</span>
@@ -14636,882 +14724,11 @@ Name: homeownership, dtype: int64</pre>
 
 
 
-<div class="jp-RenderedSVG jp-OutputArea-output " data-mime-type="image/svg+xml">
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="375.81392pt" version="1.1" viewBox="0 0 363.4225 375.81392" width="363.4225pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <metadata>
-  <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2021-08-19T21:24:00.785520</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.4.2, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linecap:butt;stroke-linejoin:round;}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 375.81392 
-L 363.4225 375.81392 
-L 363.4225 0 
-L 0 0 
-z
-" style="fill:#ffffff;"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 56.1425 334.079702 
-L 356.2225 334.079702 
-L 356.2225 21.789375 
-L 56.1425 21.789375 
-z
-" style="fill:#ffffff;"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path d="M 0 0 
-L 0 6 
-" id="md063f24895" style="stroke:#262626;stroke-width:1.25;"/>
-      </defs>
-      <g>
-       <use style="fill:#262626;stroke:#262626;stroke-width:1.25;" x="106.155833" xlink:href="#md063f24895" y="334.079702"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <!-- mortgage -->
-      <g style="fill:#262626;" transform="translate(82.92263 351.324389)scale(0.11 -0.11)">
-       <defs>
-        <path d="M 422 0 
-L 422 3319 
-L 925 3319 
-L 925 2853 
-Q 1081 3097 1340 3245 
-Q 1600 3394 1931 3394 
-Q 2300 3394 2536 3241 
-Q 2772 3088 2869 2813 
-Q 3263 3394 3894 3394 
-Q 4388 3394 4653 3120 
-Q 4919 2847 4919 2278 
-L 4919 0 
-L 4359 0 
-L 4359 2091 
-Q 4359 2428 4304 2576 
-Q 4250 2725 4106 2815 
-Q 3963 2906 3769 2906 
-Q 3419 2906 3187 2673 
-Q 2956 2441 2956 1928 
-L 2956 0 
-L 2394 0 
-L 2394 2156 
-Q 2394 2531 2256 2718 
-Q 2119 2906 1806 2906 
-Q 1569 2906 1367 2781 
-Q 1166 2656 1075 2415 
-Q 984 2175 984 1722 
-L 984 0 
-L 422 0 
-z
-" id="ArialMT-6d" transform="scale(0.015625)"/>
-        <path d="M 213 1659 
-Q 213 2581 725 3025 
-Q 1153 3394 1769 3394 
-Q 2453 3394 2887 2945 
-Q 3322 2497 3322 1706 
-Q 3322 1066 3130 698 
-Q 2938 331 2570 128 
-Q 2203 -75 1769 -75 
-Q 1072 -75 642 372 
-Q 213 819 213 1659 
-z
-M 791 1659 
-Q 791 1022 1069 705 
-Q 1347 388 1769 388 
-Q 2188 388 2466 706 
-Q 2744 1025 2744 1678 
-Q 2744 2294 2464 2611 
-Q 2184 2928 1769 2928 
-Q 1347 2928 1069 2612 
-Q 791 2297 791 1659 
-z
-" id="ArialMT-6f" transform="scale(0.015625)"/>
-        <path d="M 416 0 
-L 416 3319 
-L 922 3319 
-L 922 2816 
-Q 1116 3169 1280 3281 
-Q 1444 3394 1641 3394 
-Q 1925 3394 2219 3213 
-L 2025 2691 
-Q 1819 2813 1613 2813 
-Q 1428 2813 1281 2702 
-Q 1134 2591 1072 2394 
-Q 978 2094 978 1738 
-L 978 0 
-L 416 0 
-z
-" id="ArialMT-72" transform="scale(0.015625)"/>
-        <path d="M 1650 503 
-L 1731 6 
-Q 1494 -44 1306 -44 
-Q 1000 -44 831 53 
-Q 663 150 594 308 
-Q 525 466 525 972 
-L 525 2881 
-L 113 2881 
-L 113 3319 
-L 525 3319 
-L 525 4141 
-L 1084 4478 
-L 1084 3319 
-L 1650 3319 
-L 1650 2881 
-L 1084 2881 
-L 1084 941 
-Q 1084 700 1114 631 
-Q 1144 563 1211 522 
-Q 1278 481 1403 481 
-Q 1497 481 1650 503 
-z
-" id="ArialMT-74" transform="scale(0.015625)"/>
-        <path d="M 319 -275 
-L 866 -356 
-Q 900 -609 1056 -725 
-Q 1266 -881 1628 -881 
-Q 2019 -881 2231 -725 
-Q 2444 -569 2519 -288 
-Q 2563 -116 2559 434 
-Q 2191 0 1641 0 
-Q 956 0 581 494 
-Q 206 988 206 1678 
-Q 206 2153 378 2554 
-Q 550 2956 876 3175 
-Q 1203 3394 1644 3394 
-Q 2231 3394 2613 2919 
-L 2613 3319 
-L 3131 3319 
-L 3131 450 
-Q 3131 -325 2973 -648 
-Q 2816 -972 2473 -1159 
-Q 2131 -1347 1631 -1347 
-Q 1038 -1347 672 -1080 
-Q 306 -813 319 -275 
-z
-M 784 1719 
-Q 784 1066 1043 766 
-Q 1303 466 1694 466 
-Q 2081 466 2343 764 
-Q 2606 1063 2606 1700 
-Q 2606 2309 2336 2618 
-Q 2066 2928 1684 2928 
-Q 1309 2928 1046 2623 
-Q 784 2319 784 1719 
-z
-" id="ArialMT-67" transform="scale(0.015625)"/>
-        <path d="M 2588 409 
-Q 2275 144 1986 34 
-Q 1697 -75 1366 -75 
-Q 819 -75 525 192 
-Q 231 459 231 875 
-Q 231 1119 342 1320 
-Q 453 1522 633 1644 
-Q 813 1766 1038 1828 
-Q 1203 1872 1538 1913 
-Q 2219 1994 2541 2106 
-Q 2544 2222 2544 2253 
-Q 2544 2597 2384 2738 
-Q 2169 2928 1744 2928 
-Q 1347 2928 1158 2789 
-Q 969 2650 878 2297 
-L 328 2372 
-Q 403 2725 575 2942 
-Q 747 3159 1072 3276 
-Q 1397 3394 1825 3394 
-Q 2250 3394 2515 3294 
-Q 2781 3194 2906 3042 
-Q 3031 2891 3081 2659 
-Q 3109 2516 3109 2141 
-L 3109 1391 
-Q 3109 606 3145 398 
-Q 3181 191 3288 0 
-L 2700 0 
-Q 2613 175 2588 409 
-z
-M 2541 1666 
-Q 2234 1541 1622 1453 
-Q 1275 1403 1131 1340 
-Q 988 1278 909 1158 
-Q 831 1038 831 891 
-Q 831 666 1001 516 
-Q 1172 366 1500 366 
-Q 1825 366 2078 508 
-Q 2331 650 2450 897 
-Q 2541 1088 2541 1459 
-L 2541 1666 
-z
-" id="ArialMT-61" transform="scale(0.015625)"/>
-        <path d="M 2694 1069 
-L 3275 997 
-Q 3138 488 2766 206 
-Q 2394 -75 1816 -75 
-Q 1088 -75 661 373 
-Q 234 822 234 1631 
-Q 234 2469 665 2931 
-Q 1097 3394 1784 3394 
-Q 2450 3394 2872 2941 
-Q 3294 2488 3294 1666 
-Q 3294 1616 3291 1516 
-L 816 1516 
-Q 847 969 1125 678 
-Q 1403 388 1819 388 
-Q 2128 388 2347 550 
-Q 2566 713 2694 1069 
-z
-M 847 1978 
-L 2700 1978 
-Q 2663 2397 2488 2606 
-Q 2219 2931 1791 2931 
-Q 1403 2931 1139 2672 
-Q 875 2413 847 1978 
-z
-" id="ArialMT-65" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#ArialMT-6d"/>
-       <use x="83.300781" xlink:href="#ArialMT-6f"/>
-       <use x="138.916016" xlink:href="#ArialMT-72"/>
-       <use x="172.216797" xlink:href="#ArialMT-74"/>
-       <use x="200" xlink:href="#ArialMT-67"/>
-       <use x="255.615234" xlink:href="#ArialMT-61"/>
-       <use x="311.230469" xlink:href="#ArialMT-67"/>
-       <use x="366.845703" xlink:href="#ArialMT-65"/>
-      </g>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use style="fill:#262626;stroke:#262626;stroke-width:1.25;" x="206.1825" xlink:href="#md063f24895" y="334.079702"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <!-- own -->
-      <g style="fill:#262626;" transform="translate(196.093437 351.453295)scale(0.11 -0.11)">
-       <defs>
-        <path d="M 1034 0 
-L 19 3319 
-L 600 3319 
-L 1128 1403 
-L 1325 691 
-Q 1338 744 1497 1375 
-L 2025 3319 
-L 2603 3319 
-L 3100 1394 
-L 3266 759 
-L 3456 1400 
-L 4025 3319 
-L 4572 3319 
-L 3534 0 
-L 2950 0 
-L 2422 1988 
-L 2294 2553 
-L 1622 0 
-L 1034 0 
-z
-" id="ArialMT-77" transform="scale(0.015625)"/>
-        <path d="M 422 0 
-L 422 3319 
-L 928 3319 
-L 928 2847 
-Q 1294 3394 1984 3394 
-Q 2284 3394 2536 3286 
-Q 2788 3178 2913 3003 
-Q 3038 2828 3088 2588 
-Q 3119 2431 3119 2041 
-L 3119 0 
-L 2556 0 
-L 2556 2019 
-Q 2556 2363 2490 2533 
-Q 2425 2703 2258 2804 
-Q 2091 2906 1866 2906 
-Q 1506 2906 1245 2678 
-Q 984 2450 984 1813 
-L 984 0 
-L 422 0 
-z
-" id="ArialMT-6e" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#ArialMT-6f"/>
-       <use x="55.615234" xlink:href="#ArialMT-77"/>
-       <use x="127.832031" xlink:href="#ArialMT-6e"/>
-      </g>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use style="fill:#262626;stroke:#262626;stroke-width:1.25;" x="306.209167" xlink:href="#md063f24895" y="334.079702"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <!-- rent -->
-      <g style="fill:#262626;" transform="translate(296.732839 351.453295)scale(0.11 -0.11)">
-       <use xlink:href="#ArialMT-72"/>
-       <use x="33.300781" xlink:href="#ArialMT-65"/>
-       <use x="88.916016" xlink:href="#ArialMT-6e"/>
-       <use x="144.53125" xlink:href="#ArialMT-74"/>
-      </g>
-     </g>
-    </g>
-    <g id="text_4">
-     <!-- Homeownership -->
-     <g style="fill:#262626;" transform="translate(162.831563 366.22892)scale(0.12 -0.12)">
-      <defs>
-       <path d="M 513 0 
-L 513 4581 
-L 1119 4581 
-L 1119 2700 
-L 3500 2700 
-L 3500 4581 
-L 4106 4581 
-L 4106 0 
-L 3500 0 
-L 3500 2159 
-L 1119 2159 
-L 1119 0 
-L 513 0 
-z
-" id="ArialMT-48" transform="scale(0.015625)"/>
-       <path d="M 197 991 
-L 753 1078 
-Q 800 744 1014 566 
-Q 1228 388 1613 388 
-Q 2000 388 2187 545 
-Q 2375 703 2375 916 
-Q 2375 1106 2209 1216 
-Q 2094 1291 1634 1406 
-Q 1016 1563 777 1677 
-Q 538 1791 414 1992 
-Q 291 2194 291 2438 
-Q 291 2659 392 2848 
-Q 494 3038 669 3163 
-Q 800 3259 1026 3326 
-Q 1253 3394 1513 3394 
-Q 1903 3394 2198 3281 
-Q 2494 3169 2634 2976 
-Q 2775 2784 2828 2463 
-L 2278 2388 
-Q 2241 2644 2061 2787 
-Q 1881 2931 1553 2931 
-Q 1166 2931 1000 2803 
-Q 834 2675 834 2503 
-Q 834 2394 903 2306 
-Q 972 2216 1119 2156 
-Q 1203 2125 1616 2013 
-Q 2213 1853 2448 1751 
-Q 2684 1650 2818 1456 
-Q 2953 1263 2953 975 
-Q 2953 694 2789 445 
-Q 2625 197 2315 61 
-Q 2006 -75 1616 -75 
-Q 969 -75 630 194 
-Q 291 463 197 991 
-z
-" id="ArialMT-73" transform="scale(0.015625)"/>
-       <path d="M 422 0 
-L 422 4581 
-L 984 4581 
-L 984 2938 
-Q 1378 3394 1978 3394 
-Q 2347 3394 2619 3248 
-Q 2891 3103 3008 2847 
-Q 3125 2591 3125 2103 
-L 3125 0 
-L 2563 0 
-L 2563 2103 
-Q 2563 2525 2380 2717 
-Q 2197 2909 1863 2909 
-Q 1613 2909 1392 2779 
-Q 1172 2650 1078 2428 
-Q 984 2206 984 1816 
-L 984 0 
-L 422 0 
-z
-" id="ArialMT-68" transform="scale(0.015625)"/>
-       <path d="M 425 3934 
-L 425 4581 
-L 988 4581 
-L 988 3934 
-L 425 3934 
-z
-M 425 0 
-L 425 3319 
-L 988 3319 
-L 988 0 
-L 425 0 
-z
-" id="ArialMT-69" transform="scale(0.015625)"/>
-       <path d="M 422 -1272 
-L 422 3319 
-L 934 3319 
-L 934 2888 
-Q 1116 3141 1344 3267 
-Q 1572 3394 1897 3394 
-Q 2322 3394 2647 3175 
-Q 2972 2956 3137 2557 
-Q 3303 2159 3303 1684 
-Q 3303 1175 3120 767 
-Q 2938 359 2589 142 
-Q 2241 -75 1856 -75 
-Q 1575 -75 1351 44 
-Q 1128 163 984 344 
-L 984 -1272 
-L 422 -1272 
-z
-M 931 1641 
-Q 931 1000 1190 694 
-Q 1450 388 1819 388 
-Q 2194 388 2461 705 
-Q 2728 1022 2728 1688 
-Q 2728 2322 2467 2637 
-Q 2206 2953 1844 2953 
-Q 1484 2953 1207 2617 
-Q 931 2281 931 1641 
-z
-" id="ArialMT-70" transform="scale(0.015625)"/>
-      </defs>
-      <use xlink:href="#ArialMT-48"/>
-      <use x="72.216797" xlink:href="#ArialMT-6f"/>
-      <use x="127.832031" xlink:href="#ArialMT-6d"/>
-      <use x="211.132812" xlink:href="#ArialMT-65"/>
-      <use x="266.748047" xlink:href="#ArialMT-6f"/>
-      <use x="322.363281" xlink:href="#ArialMT-77"/>
-      <use x="394.580078" xlink:href="#ArialMT-6e"/>
-      <use x="450.195312" xlink:href="#ArialMT-65"/>
-      <use x="505.810547" xlink:href="#ArialMT-72"/>
-      <use x="539.111328" xlink:href="#ArialMT-73"/>
-      <use x="589.111328" xlink:href="#ArialMT-68"/>
-      <use x="644.726562" xlink:href="#ArialMT-69"/>
-      <use x="666.943359" xlink:href="#ArialMT-70"/>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path d="M 0 0 
-L -6 0 
-" id="m87b0340cc3" style="stroke:#262626;stroke-width:1.25;"/>
-      </defs>
-      <g>
-       <use style="fill:#262626;stroke:#262626;stroke-width:1.25;" x="56.1425" xlink:href="#m87b0340cc3" y="334.079702"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <!-- 0 -->
-      <g style="fill:#262626;" transform="translate(40.525469 338.016499)scale(0.11 -0.11)">
-       <defs>
-        <path d="M 266 2259 
-Q 266 3072 433 3567 
-Q 600 4063 929 4331 
-Q 1259 4600 1759 4600 
-Q 2128 4600 2406 4451 
-Q 2684 4303 2865 4023 
-Q 3047 3744 3150 3342 
-Q 3253 2941 3253 2259 
-Q 3253 1453 3087 958 
-Q 2922 463 2592 192 
-Q 2263 -78 1759 -78 
-Q 1097 -78 719 397 
-Q 266 969 266 2259 
-z
-M 844 2259 
-Q 844 1131 1108 757 
-Q 1372 384 1759 384 
-Q 2147 384 2411 759 
-Q 2675 1134 2675 2259 
-Q 2675 3391 2411 3762 
-Q 2147 4134 1753 4134 
-Q 1366 4134 1134 3806 
-Q 844 3388 844 2259 
-z
-" id="ArialMT-30" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#ArialMT-30"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use style="fill:#262626;stroke:#262626;stroke-width:1.25;" x="56.1425" xlink:href="#m87b0340cc3" y="271.975012"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <!-- 1000 -->
-      <g style="fill:#262626;" transform="translate(22.174375 275.911809)scale(0.11 -0.11)">
-       <defs>
-        <path d="M 2384 0 
-L 1822 0 
-L 1822 3584 
-Q 1619 3391 1289 3197 
-Q 959 3003 697 2906 
-L 697 3450 
-Q 1169 3672 1522 3987 
-Q 1875 4303 2022 4600 
-L 2384 4600 
-L 2384 0 
-z
-" id="ArialMT-31" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#ArialMT-31"/>
-       <use x="55.615234" xlink:href="#ArialMT-30"/>
-       <use x="111.230469" xlink:href="#ArialMT-30"/>
-       <use x="166.845703" xlink:href="#ArialMT-30"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use style="fill:#262626;stroke:#262626;stroke-width:1.25;" x="56.1425" xlink:href="#m87b0340cc3" y="209.870322"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <!-- 2000 -->
-      <g style="fill:#262626;" transform="translate(22.174375 213.807119)scale(0.11 -0.11)">
-       <defs>
-        <path d="M 3222 541 
-L 3222 0 
-L 194 0 
-Q 188 203 259 391 
-Q 375 700 629 1000 
-Q 884 1300 1366 1694 
-Q 2113 2306 2375 2664 
-Q 2638 3022 2638 3341 
-Q 2638 3675 2398 3904 
-Q 2159 4134 1775 4134 
-Q 1369 4134 1125 3890 
-Q 881 3647 878 3216 
-L 300 3275 
-Q 359 3922 746 4261 
-Q 1134 4600 1788 4600 
-Q 2447 4600 2831 4234 
-Q 3216 3869 3216 3328 
-Q 3216 3053 3103 2787 
-Q 2991 2522 2730 2228 
-Q 2469 1934 1863 1422 
-Q 1356 997 1212 845 
-Q 1069 694 975 541 
-L 3222 541 
-z
-" id="ArialMT-32" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#ArialMT-32"/>
-       <use x="55.615234" xlink:href="#ArialMT-30"/>
-       <use x="111.230469" xlink:href="#ArialMT-30"/>
-       <use x="166.845703" xlink:href="#ArialMT-30"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_7">
-      <g>
-       <use style="fill:#262626;stroke:#262626;stroke-width:1.25;" x="56.1425" xlink:href="#m87b0340cc3" y="147.765633"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <!-- 3000 -->
-      <g style="fill:#262626;" transform="translate(22.174375 151.70243)scale(0.11 -0.11)">
-       <defs>
-        <path d="M 269 1209 
-L 831 1284 
-Q 928 806 1161 595 
-Q 1394 384 1728 384 
-Q 2125 384 2398 659 
-Q 2672 934 2672 1341 
-Q 2672 1728 2419 1979 
-Q 2166 2231 1775 2231 
-Q 1616 2231 1378 2169 
-L 1441 2663 
-Q 1497 2656 1531 2656 
-Q 1891 2656 2178 2843 
-Q 2466 3031 2466 3422 
-Q 2466 3731 2256 3934 
-Q 2047 4138 1716 4138 
-Q 1388 4138 1169 3931 
-Q 950 3725 888 3313 
-L 325 3413 
-Q 428 3978 793 4289 
-Q 1159 4600 1703 4600 
-Q 2078 4600 2393 4439 
-Q 2709 4278 2876 4000 
-Q 3044 3722 3044 3409 
-Q 3044 3113 2884 2869 
-Q 2725 2625 2413 2481 
-Q 2819 2388 3044 2092 
-Q 3269 1797 3269 1353 
-Q 3269 753 2831 336 
-Q 2394 -81 1725 -81 
-Q 1122 -81 723 278 
-Q 325 638 269 1209 
-z
-" id="ArialMT-33" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#ArialMT-33"/>
-       <use x="55.615234" xlink:href="#ArialMT-30"/>
-       <use x="111.230469" xlink:href="#ArialMT-30"/>
-       <use x="166.845703" xlink:href="#ArialMT-30"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_8">
-      <g>
-       <use style="fill:#262626;stroke:#262626;stroke-width:1.25;" x="56.1425" xlink:href="#m87b0340cc3" y="85.660943"/>
-      </g>
-     </g>
-     <g id="text_9">
-      <!-- 4000 -->
-      <g style="fill:#262626;" transform="translate(22.174375 89.59774)scale(0.11 -0.11)">
-       <defs>
-        <path d="M 2069 0 
-L 2069 1097 
-L 81 1097 
-L 81 1613 
-L 2172 4581 
-L 2631 4581 
-L 2631 1613 
-L 3250 1613 
-L 3250 1097 
-L 2631 1097 
-L 2631 0 
-L 2069 0 
-z
-M 2069 1613 
-L 2069 3678 
-L 634 1613 
-L 2069 1613 
-z
-" id="ArialMT-34" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#ArialMT-34"/>
-       <use x="55.615234" xlink:href="#ArialMT-30"/>
-       <use x="111.230469" xlink:href="#ArialMT-30"/>
-       <use x="166.845703" xlink:href="#ArialMT-30"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_6">
-     <g id="line2d_9">
-      <g>
-       <use style="fill:#262626;stroke:#262626;stroke-width:1.25;" x="56.1425" xlink:href="#m87b0340cc3" y="23.556253"/>
-      </g>
-     </g>
-     <g id="text_10">
-      <!-- 5000 -->
-      <g style="fill:#262626;" transform="translate(22.174375 27.49305)scale(0.11 -0.11)">
-       <defs>
-        <path d="M 266 1200 
-L 856 1250 
-Q 922 819 1161 601 
-Q 1400 384 1738 384 
-Q 2144 384 2425 690 
-Q 2706 997 2706 1503 
-Q 2706 1984 2436 2262 
-Q 2166 2541 1728 2541 
-Q 1456 2541 1237 2417 
-Q 1019 2294 894 2097 
-L 366 2166 
-L 809 4519 
-L 3088 4519 
-L 3088 3981 
-L 1259 3981 
-L 1013 2750 
-Q 1425 3038 1878 3038 
-Q 2478 3038 2890 2622 
-Q 3303 2206 3303 1553 
-Q 3303 931 2941 478 
-Q 2500 -78 1738 -78 
-Q 1113 -78 717 272 
-Q 322 622 266 1200 
-z
-" id="ArialMT-35" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#ArialMT-35"/>
-       <use x="55.615234" xlink:href="#ArialMT-30"/>
-       <use x="111.230469" xlink:href="#ArialMT-30"/>
-       <use x="166.845703" xlink:href="#ArialMT-30"/>
-      </g>
-     </g>
-    </g>
-    <g id="text_11">
-     <!-- count -->
-     <g style="fill:#262626;" transform="translate(15.789375 192.611101)rotate(-90)scale(0.12 -0.12)">
-      <defs>
-       <path d="M 2588 1216 
-L 3141 1144 
-Q 3050 572 2676 248 
-Q 2303 -75 1759 -75 
-Q 1078 -75 664 370 
-Q 250 816 250 1647 
-Q 250 2184 428 2587 
-Q 606 2991 970 3192 
-Q 1334 3394 1763 3394 
-Q 2303 3394 2647 3120 
-Q 2991 2847 3088 2344 
-L 2541 2259 
-Q 2463 2594 2264 2762 
-Q 2066 2931 1784 2931 
-Q 1359 2931 1093 2626 
-Q 828 2322 828 1663 
-Q 828 994 1084 691 
-Q 1341 388 1753 388 
-Q 2084 388 2306 591 
-Q 2528 794 2588 1216 
-z
-" id="ArialMT-63" transform="scale(0.015625)"/>
-       <path d="M 2597 0 
-L 2597 488 
-Q 2209 -75 1544 -75 
-Q 1250 -75 995 37 
-Q 741 150 617 320 
-Q 494 491 444 738 
-Q 409 903 409 1263 
-L 409 3319 
-L 972 3319 
-L 972 1478 
-Q 972 1038 1006 884 
-Q 1059 663 1231 536 
-Q 1403 409 1656 409 
-Q 1909 409 2131 539 
-Q 2353 669 2445 892 
-Q 2538 1116 2538 1541 
-L 2538 3319 
-L 3100 3319 
-L 3100 0 
-L 2597 0 
-z
-" id="ArialMT-75" transform="scale(0.015625)"/>
-      </defs>
-      <use xlink:href="#ArialMT-63"/>
-      <use x="50" xlink:href="#ArialMT-6f"/>
-      <use x="105.615234" xlink:href="#ArialMT-75"/>
-      <use x="161.230469" xlink:href="#ArialMT-6e"/>
-      <use x="216.845703" xlink:href="#ArialMT-74"/>
-     </g>
-    </g>
-   </g>
-   <g id="patch_3">
-    <path clip-path="url(#p9196c427e3)" d="M 66.145167 334.079702 
-L 146.1665 334.079702 
-L 146.1665 36.660343 
-L 66.145167 36.660343 
-z
-" style="fill:#162a79;stroke:#ffffff;stroke-linejoin:miter;"/>
-   </g>
-   <g id="patch_4">
-    <path clip-path="url(#p9196c427e3)" d="M 166.171833 334.079702 
-L 246.193167 334.079702 
-L 246.193167 250.052057 
-L 166.171833 250.052057 
-z
-" style="fill:#5689dd;stroke:#ffffff;stroke-linejoin:miter;"/>
-   </g>
-   <g id="patch_5">
-    <path clip-path="url(#p9196c427e3)" d="M 266.1985 334.079702 
-L 346.219833 334.079702 
-L 346.219833 94.479809 
-L 266.1985 94.479809 
-z
-" style="fill:#9ac0e9;stroke:#ffffff;stroke-linejoin:miter;"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 56.1425 334.079702 
-L 56.1425 21.789375 
-" style="fill:none;stroke:#262626;stroke-linecap:square;stroke-linejoin:miter;stroke-width:1.25;"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 56.1425 334.079702 
-L 356.2225 334.079702 
-" style="fill:none;stroke:#262626;stroke-linecap:square;stroke-linejoin:miter;stroke-width:1.25;"/>
-   </g>
-   <g id="text_12">
-    <!-- Bar chart -->
-    <g style="fill:#262626;" transform="translate(181.84125 15.789375)scale(0.12 -0.12)">
-     <defs>
-      <path d="M 469 0 
-L 469 4581 
-L 2188 4581 
-Q 2713 4581 3030 4442 
-Q 3347 4303 3526 4014 
-Q 3706 3725 3706 3409 
-Q 3706 3116 3547 2856 
-Q 3388 2597 3066 2438 
-Q 3481 2316 3704 2022 
-Q 3928 1728 3928 1328 
-Q 3928 1006 3792 729 
-Q 3656 453 3456 303 
-Q 3256 153 2954 76 
-Q 2653 0 2216 0 
-L 469 0 
-z
-M 1075 2656 
-L 2066 2656 
-Q 2469 2656 2644 2709 
-Q 2875 2778 2992 2937 
-Q 3109 3097 3109 3338 
-Q 3109 3566 3000 3739 
-Q 2891 3913 2687 3977 
-Q 2484 4041 1991 4041 
-L 1075 4041 
-L 1075 2656 
-z
-M 1075 541 
-L 2216 541 
-Q 2509 541 2628 563 
-Q 2838 600 2978 687 
-Q 3119 775 3209 942 
-Q 3300 1109 3300 1328 
-Q 3300 1584 3169 1773 
-Q 3038 1963 2805 2039 
-Q 2572 2116 2134 2116 
-L 1075 2116 
-L 1075 541 
-z
-" id="ArialMT-42" transform="scale(0.015625)"/>
-      <path id="ArialMT-20" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#ArialMT-42"/>
-     <use x="66.699219" xlink:href="#ArialMT-61"/>
-     <use x="122.314453" xlink:href="#ArialMT-72"/>
-     <use x="155.615234" xlink:href="#ArialMT-20"/>
-     <use x="183.398438" xlink:href="#ArialMT-63"/>
-     <use x="233.398438" xlink:href="#ArialMT-68"/>
-     <use x="289.013672" xlink:href="#ArialMT-61"/>
-     <use x="344.628906" xlink:href="#ArialMT-72"/>
-     <use x="377.929688" xlink:href="#ArialMT-74"/>
-    </g>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p9196c427e3">
-   <rect height="312.290327" width="300.08" x="56.1425" y="21.789375"/>
-  </clipPath>
- </defs>
-</svg>
 
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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7Nlj9ezZ0zp58qR1/vx5q0ePHtaqVassy7KslJQU69VXX7UGDhxo5eTkWJZlWcuWLbOmTJliWZZlRUREWGvWrPE81t13321ZlmWdPn3aGjBggJWfn2/V1NRYkydPtv7rv/7LqqmpsRISEqzTp09blmVZH3zwgTVhwgTLsixr+PDh1vbt2y3Lsqzly5dbERERlmVZ1n/8x39YW7ZssSzLsgoKCqzIyEirvLzc25+WRmP79u3Www8/bJ0/f95yuVzWxIkTrXfffdeaP3++ZVmWNXr0aCsiIsKqrq62PvzwQ2vBggVWTk6O1alTJ+vIkSOWZVlWUlKS9c477zTkYVxX9uzZY/Xq1csqKyuzXnrpJSsjI8OyLMsqLy+3YmJirO+++85as2aNFR4ebpWXl1vnz5+3wsLCrGPHjlk5OTme//YbO51RX2N33303wcHBALRs2dJzdnz77bezbds2unXr5rknwaOPPsqbb77p+dju3btf8Xiff/45PXv2pE2bNgAMGzaMLVu20KRJE1577TW2bdvG8ePH2bdvH02aNKGkpIS8vDzCw8MBGDFiBO+88w5w4d7e3377LUuWLAGgurqanJwcunTp4qXPRuOyZ88eYmJiuPnmm4ELn7uMjAzKy8s5e/YsAJ06deLIkSPs3LnT832EVq1a8S//8i8AdOzYkdLS0oY5gOtUhw4duPXWW8nKyqKiooI1a9YAcP78eb766isAevbsSfPmzQFo164dpaWl3HLLLQ0287WmUF9jvr6+tbYvvXOfddmPrFuWRXV1tWfbz8/visdr0qQJbrf7ivVz584xcuRIHnroIX71q1/RqVMnVq5ciY+PzxXPc5Hb7SYjI8Pzz/LCwkJatWpV52O73l3t83zLLbdQWlrK5s2bueeee2jdujV79uzhyJEj9OzZk1OnTtX6utlsth/9/Ms/56abbgIufH1eeuklQkNDASguLua2227jk08+ue6/BvpmYj3q1q0bBw8e9Nxo//3336dPnz5X3dfHx4fq6mruuecevvjiCwoLC7Esi8zMTGw2G9nZ2dhsNiZOnEifPn3485//TE1NDbfeeivt2rVjx44dwIX3m7yob9++/M///A8AX3/9NbGxsfzwww9ePurGo2/fvmzcuJGKigqqq6tZs2YNffv2JSwsjKVLl/LrX/+avn37smLFCrp3796ob5/bGPXt25dVq1YBF04yHnroIU6dOvWj+9vt9lonQo2ZQl2PWrduzezZs0lKSiImJoZ9+/Yxa9asq+4bGRnJ0KFDueWWW0hNTWXcuHGMGDGC6upq/Pz86Ny5M126dGHw4MHExMTQsmVLTp48CcCCBQtIT09n+PDhHDp0yHNGkpqaysGDB4mNjWXq1KksWLDA889FgYiICO677z5GjBhBTEwMt99+O4899hj33XcfJ0+epFevXnTq1AmXy0VERERDj3vDSUpKoqKigiFDhpCYmEhycjJ33HHHj+7fqlUrbr/99uviR131EnLDnTlzhhUrVpCUlESTJk2YM2cO7du3/8n/+NLS0njkkUdwOBxs3ryZTz75hFdffbUepxaRa0nXqA3XokULysrKGDJkCD4+PoSGhvLII4/85MfcfvvtjBs3Drvdjr+/P3Pnzq2naUXEG3RGLSJiOF2jFhExnEItImI4hVpExHAKtRijU6dOfP/997XW1q5dy4QJExpoIjOkpKTw9ttvX/Xvhg4dSllZWT1PJPVNP/Uh0oitX7++oUeQeqBQS6NRXl7OrFmzOHbsGDabjXvvvZdnnnkGu93Ov/7rv/LEE0+QlZXF+fPnSUpKwul08uWXX+JwOHj99ddp1qwZ33zzDXPnzqWkpISamhoef/xxRo4cCVx4peiKFSto0qQJrVu35vnnn6eiooKJEyd6Xun529/+ltatW/Piiy9SVVXFvffey5YtW+jfvz9PPfUUu3btorCwkCeffJIxY8YA8MEHH7Bq1SrcbjctWrTg+eef58477yQlJYWSkhJycnK47777iIiIYP78+Z6Xsk+YMIGoqCgA/vrXvzJq1CiKi4vp2LEj//3f/02zZs3o1KkTu3fvZvv27TidTtxuNydPnqRNmzbMnz/fc48YadwUajFKYmIiTZr8/YpcaWkpnTp1AmDOnDm0aNGCTz75BJfLxaRJk/jjH//IU089RVVVFa1bt+bDDz/kzTffJDU1lU8//ZTAwEBGjhzJ1q1bGTx4ME8//TQLFiwgNDSU8vJyHn30Ue666y5++OEH3nrrLd5//30CAgJYu3YtkydPZuPGjdjtdr788kvuuOMOvv32W77++msAdu/eTbdu3bj11lupqqqiZcuWvPfeexw+fJjRo0czYsQIDh48yLp161i5ciU333wzn332GUlJSXz66acAVFRUsHHjRs+xP/HEE8TExHDs2DHef/99T6gLCgp45513aNq0KQ8//DCbN29m2LBhtT53+/fvZ+3atXTo0IGFCxcyd+5czw24pHFTqMUoGRkZBAQEeLbXrl3Lpk2bANi5cyerVq3CZrPRtGlTRo0aRUZGBk899RSAJ2p33HEHd999t+dsMiQkhNLSUrKzs/nuu++YNm2a5/ErKir429/+Rm5uLg8++KDnuePi4pg7dy65ubk88MAD7Ny5k44dO9K3b1/+93//l6+++oqtW7cyaNAgz2NFRkYCEBoaSlVVFefPn2f79u2cOHGCUaNGefYrKyujpKQEgF69ennWBw8ezOzZs9m2bRv9+/fnmWee8fzdb37zG89d/Tp27HjFtXyAAQMG0KFDBwAeeeQRhg4d+rM+92IuhVoaDbfbjc1mq7V96U13Lr1z4eV3MQQ8N6269LpucXExt956K4sXL75i/4t3N/zNb37DK6+8QmFhIQMGDKBVq1Z89tln7Ny5k6lTp3r2v3gHt4szWpaF2+1m6NChJCcne2YuLCzktttuA6BZs2aejx81ahQRERHs2rWLv/zlL6SlpeF0OoELNxi66MfuDnfpTaLcbrduGnUd0U99SKMxcOBA3n33XSzLoqqqitWrV/+sd6jp0KEDN910kyfUp06dYsiQIRw+fJh7772XzMxMz5nqmjVraNGiBe3bt+eee+4hJyeH7du3079/fwYMGEBGRga/+MUvaNmy5T+ceePGjRQWFgKwatUqEhMTr7rvqFGjOHr0KHFxcfzhD3+grKyMoqKiOh/fnj17KCgoAOC9997TjaOuIzqjlkYjNTWVOXPmEBsbi8vl4t5772XixIl1/vimTZuSnp7O3Llzeeutt6iurubf//3fPZcfxo4dS2JiIm63m4CAAN544w3P9fKwsDC++OILAgIC6NWrF6WlpbUue/yYgQMHMn78eMaNG4fNZqN58+akpaXV+pfBRf/5n//JvHnzePnll7HZbCQlJXneZKIu2rRpQ3JyMkVFRdx1113Mnj27zh8rZtO9PkSuAxev5b/xxhsNPYp4gS59iIgYTmfUIiKG0xm1iIjhFGoREcMp1CIihlOoRUQMp1CLiBhOoRYRMdz/ARAzQj3W++98AAAAAElFTkSuQmCC
+"
+>
 </div>
 
 </div>
