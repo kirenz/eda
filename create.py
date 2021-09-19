@@ -6,30 +6,29 @@ ipynbfiles = []
 for file in glob.glob("*.ipynb"):
     ipynbfiles.append(file)
 
+# Make list of all html files
+htmlfiles = []
+for file in glob.glob("*.html"):
+    htmlfiles.append(file)
+
 # Create dataframes
 df = pd.DataFrame(ipynbfiles, columns=["ipynb"])
+df1 = pd.DataFrame(htmlfiles, columns=["html"])
 
 # Create new column with name of file
 #df['name'] = df['ipynb'].str.replace(".ipynb", "", case=False, regex=False)
 
 # Sort
 df = df.sort_values('ipynb', ascending=True)
+df1 = df1.sort_values('html', ascending=True)
 
 # Write csv
 df.to_csv('notebooks.csv', index=False, header=False)
-
-
-
+df1.to_csv('html.csv', index=False, header=False)
 
 
 ## OPTIONAL
 
-# Make list of all html files
-#htmlfiles = []
-#for file in glob.glob("*.html"):
-#    htmlfiles.append(file)
-
-#df1 = pd.DataFrame(htmlfiles, columns=["html"])
 
 # Combine frames
 #df = pd.concat([df1, df2], axis=1)
