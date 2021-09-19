@@ -13,3 +13,7 @@ jupyter nbconvert 0*.ipynb --to slides --reveal-prefix reveal.js
 # List all HTML files
 # ls *.html
 
+# Other option to list html-files in directory
+# find . -maxdepth 1 -name '*.html'
+
+# ls *.html > files.csv
