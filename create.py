@@ -1,22 +1,13 @@
 import glob
 import pandas as pd
 
-# Make list of all html files
-#htmlfiles = []
-#for file in glob.glob("*.html"):
-#    htmlfiles.append(file)
-
 # Make list of all ipynb files
 ipynbfiles = []
 for file in glob.glob("*.ipynb"):
     ipynbfiles.append(file)
 
 # Create dataframes
-#df1 = pd.DataFrame(htmlfiles, columns=["html"])
 df = pd.DataFrame(ipynbfiles, columns=["ipynb"])
-
-# Combine frames
-#df = pd.concat([df1, df2], axis=1)
 
 # Create new column with name of file
 df['name'] = df['ipynb'].str.replace(".ipynb", "", case=False, regex=False)
@@ -28,8 +19,17 @@ df = df.sort_values('name', ascending=True)
 df.to_csv('list.csv', index=False)
 
 
-
 ## OPTIONAL
+
+# Make list of all html files
+#htmlfiles = []
+#for file in glob.glob("*.html"):
+#    htmlfiles.append(file)
+
+#df1 = pd.DataFrame(htmlfiles, columns=["html"])
+
+# Combine frames
+#df = pd.concat([df1, df2], axis=1)
 
 #words = ["Here", "I","want","to","concatenate","words","using","pipe","delimeter"]
 #"|".join(words)
