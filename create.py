@@ -10,13 +10,16 @@ for file in glob.glob("*.ipynb"):
 df = pd.DataFrame(ipynbfiles, columns=["ipynb"])
 
 # Create new column with name of file
-df['name'] = df['ipynb'].str.replace(".ipynb", "", case=False, regex=False)
+#df['name'] = df['ipynb'].str.replace(".ipynb", "", case=False, regex=False)
 
 # Sort
-df = df.sort_values('name', ascending=True)
+df = df.sort_values('ipynb', ascending=True)
 
 # Write csv
-df.to_csv('list.csv', index=False)
+df.to_csv('notebooks.csv', index=False, header=False)
+
+
+
 
 
 ## OPTIONAL
