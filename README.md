@@ -1,4 +1,4 @@
-# Modern Statistics Python supplements 
+# Python supplements 
 
 **Work in progress**
 
