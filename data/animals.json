@@ -1,4 +1,4 @@
-[
+animals = [
   {
     id: 1,
     class: "train",
