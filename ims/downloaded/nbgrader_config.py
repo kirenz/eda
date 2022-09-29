@@ -1,6 +1,6 @@
 c = get_config()
 
-course_id = "CHANGE_NAME"
+course_id = "ims"
 
 c.CourseDirectory.course_id = course_id
 
