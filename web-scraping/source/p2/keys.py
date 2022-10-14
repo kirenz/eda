@@ -1,0 +1,6 @@
+
+consumer_key='asBRlw0NwWHarqXkA9qxX7NSl'
+consumer_secret='rDwevMXBj5WR9QsoHHAfujeUfJCS3QY7hWRYYsGFdAzhwXeWGq'
+access_token='566707599-vjh8CKrR2l1PfgHpwxbVVg9tiWz0lkC2wGePjdmG'
+access_token_secret='bJRoRtjB9NTevtfvfL2Y7eAXI4v97uYUIgAryo8RAppRx'
+bearer_token='AAAAAAAAAAAAAAAAAAAAAFKFWgEAAAAAKNLO5jDuL6V8gL%2BtoHahQVMmxQM%3DPt1llDsGUqyWlXhGUaY6sBYTaUbnN3PXXyM4OoKpfQQyoiQkgA'
