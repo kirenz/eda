@@ -10,7 +10,7 @@ course_id = "ims"
 # server set up.
 c.CourseDirectory.course_id = course_id
 
-c.IncludeHeaderFooter.header = "source/header.ipynb"
+c.IncludeHeaderFooter.header = "../header.ipynb"
 
 c.Exchange.root = "/tmp/exchange"
 
