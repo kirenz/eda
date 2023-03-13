@@ -1,6 +1,6 @@
 c = get_config()
 
-course_id = "textmining"
+course_id = "models"
 
 ###############################################################################
 # Begin additions by nbgrader quickstart

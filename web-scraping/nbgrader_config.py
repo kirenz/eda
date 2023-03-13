@@ -1,6 +1,6 @@
 c = get_config()
 
-course_id = "ae"
+course_id = "web-scraping"
 
 ###############################################################################
 # Begin additions by nbgrader quickstart
@@ -10,7 +10,7 @@ course_id = "ae"
 # server set up.
 c.CourseDirectory.course_id = course_id
 
-c.IncludeHeaderFooter.header = "source/header.ipynb"
+c.IncludeHeaderFooter.header = "../header.ipynb"
 
 c.Exchange.root = "/tmp/exchange"
 
